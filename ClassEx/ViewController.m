@@ -14,14 +14,15 @@
 
 @implementation ViewController
 
-- (id)initWithCoder:(NSCoder *)coder
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithCoder:coder];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        
+        // Custom initialization
     }
     return self;
 }
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

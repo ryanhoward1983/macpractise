@@ -14,6 +14,9 @@
 		0C567B4A19FB715F00B28874 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C567B4919FB715F00B28874 /* Images.xcassets */; };
 		0C567B4D19FB715F00B28874 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C567B4B19FB715F00B28874 /* LaunchScreen.xib */; };
 		0C567B5919FB715F00B28874 /* ClassExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C567B5819FB715F00B28874 /* ClassExTests.m */; };
+		0CB5C2C319FBE43200CFE0AA /* ClassEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5C2C219FBE43200CFE0AA /* ClassEx.m */; };
+		0CB5C2C719FBE9A000CFE0AA /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5C2C619FBE9A000CFE0AA /* Device.m */; };
+		0CB5C2C919FBF3CF00CFE0AA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB5C2C819FBF3CF00CFE0AA /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		0C567B5219FB715F00B28874 /* ClassExTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassExTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C567B5719FB715F00B28874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C567B5819FB715F00B28874 /* ClassExTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassExTests.m; sourceTree = "<group>"; };
+		0CB5C2C119FBE43200CFE0AA /* ClassEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassEx.h; sourceTree = "<group>"; };
+		0CB5C2C219FBE43200CFE0AA /* ClassEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassEx.m; sourceTree = "<group>"; };
+		0CB5C2C519FBE9A000CFE0AA /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		0CB5C2C619FBE9A000CFE0AA /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		0CB5C2C819FBF3CF00CFE0AA /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 		0C567B3B19FB715F00B28874 /* ClassEx */ = {
 			isa = PBXGroup;
 			children = (
+				0CB5C2C419FBE97600CFE0AA /* entity */,
+				0CB5C2C019FBE41300CFE0AA /* logic */,
 				0C567B4019FB715F00B28874 /* AppDelegate.h */,
 				0C567B4119FB715F00B28874 /* AppDelegate.m */,
 				0C567B4319FB715F00B28874 /* ViewController.h */,
@@ -89,6 +99,7 @@
 				0C567B4919FB715F00B28874 /* Images.xcassets */,
 				0C567B4B19FB715F00B28874 /* LaunchScreen.xib */,
 				0C567B3C19FB715F00B28874 /* Supporting Files */,
+				0CB5C2C819FBF3CF00CFE0AA /* ViewController.xib */,
 			);
 			path = ClassEx;
 			sourceTree = "<group>";
@@ -117,6 +128,24 @@
 				0C567B5719FB715F00B28874 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0CB5C2C019FBE41300CFE0AA /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				0CB5C2C119FBE43200CFE0AA /* ClassEx.h */,
+				0CB5C2C219FBE43200CFE0AA /* ClassEx.m */,
+			);
+			name = logic;
+			sourceTree = "<group>";
+		};
+		0CB5C2C419FBE97600CFE0AA /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				0CB5C2C519FBE9A000CFE0AA /* Device.h */,
+				0CB5C2C619FBE9A000CFE0AA /* Device.m */,
+			);
+			name = entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +230,7 @@
 			files = (
 				0C567B4819FB715F00B28874 /* Main.storyboard in Resources */,
 				0C567B4D19FB715F00B28874 /* LaunchScreen.xib in Resources */,
+				0CB5C2C919FBF3CF00CFE0AA /* ViewController.xib in Resources */,
 				0C567B4A19FB715F00B28874 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +252,8 @@
 				0C567B4519FB715F00B28874 /* ViewController.m in Sources */,
 				0C567B4219FB715F00B28874 /* AppDelegate.m in Sources */,
 				0C567B3F19FB715F00B28874 /* main.m in Sources */,
+				0CB5C2C719FBE9A000CFE0AA /* Device.m in Sources */,
+				0CB5C2C319FBE43200CFE0AA /* ClassEx.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +444,7 @@
 				0C567B5E19FB715F00B28874 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C567B5F19FB715F00B28874 /* Build configuration list for PBXNativeTarget "ClassExTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +453,7 @@
 				0C567B6119FB715F00B28874 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
