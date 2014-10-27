@@ -15,7 +15,7 @@
     self = [super init];
     if (self) {
         _format = @"%@ %dG";
-        self.name = @"";
+        self.name = @"1";
         self.version = 0;
     }
     return self;
